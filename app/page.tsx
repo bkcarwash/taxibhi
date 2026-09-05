@@ -9,6 +9,7 @@ import { FaqSection } from "@/components/sections/FaqSection";
 import { Fleet } from "@/components/sections/Fleet";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { BookingWidget } from "@/components/sections/BookingWidget";
+import { RouteButtons } from "@/components/sections/RouteButtons";
 import {
   generateTaxiServiceJsonLd,
   generateFAQPageJsonLd,
@@ -58,6 +59,7 @@ export default function HomePage() {
 
       <Hero />
       <TrustBar />
+      <RouteButtons />
       <BookingWidget />
       <Services />
       <Fleet />

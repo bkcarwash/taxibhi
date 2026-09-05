@@ -138,13 +138,31 @@ export function Fleet() {
           ))}
         </div>
 
-        {/* Bottom strip */}
+        {/* Fleet lineup banner */}
         <motion.div
-          className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 bg-brand-50 border border-brand-100 rounded-2xl px-6 py-5"
+          className="mt-10 rounded-2xl overflow-hidden border border-sand"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.3 }}
+        >
+          <Image
+            src="/download.webp"
+            alt="Taxi Bhai full fleet lineup — sedan, van, SUV, minibus, coaster and bus"
+            width={1536}
+            height={200}
+            className="w-full h-auto object-contain bg-white"
+            priority={false}
+          />
+        </motion.div>
+
+        {/* Bottom strip */}
+        <motion.div
+          className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-4 bg-brand-50 border border-brand-100 rounded-2xl px-6 py-5"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.4 }}
         >
           <div>
             <p className="font-semibold text-brand-900 text-sm mb-0.5">
