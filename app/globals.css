@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — emerald + gold */
+  --color-brand-950: #022c22;
+  --color-brand-900: #064e3b;
+  --color-brand-800: #065f46;
+  --color-brand-700: #047857;
+  --color-brand-600: #059669;
+  --color-brand-500: #10b981;
+  --color-brand-400: #34d399;
+  --color-brand-100: #d1fae5;
+  --color-brand-50: #ecfdf5;
+
+  --color-gold-700: #b45309;
+  --color-gold-600: #d97706;
+  --color-gold-500: #f59e0b;
+  --color-gold-400: #fbbf24;
+  --color-gold-300: #fcd34d;
+  --color-gold-100: #fef3c7;
+  --color-gold-50: #fffbeb;
+
+  --color-cream: #fffbf5;
+  --color-parchment: #f9f7f4;
+  --color-sand: #f5f0e8;
+  --color-ink: #0f1a14;
+
+  /* Typography */
+  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+
+  /* Custom spacing */
+  --spacing-section: 5rem;
+}
+
+/* ─── Global base ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Typography scale ────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--color-brand-950);
+}
+
+/* ─── Focus visible (on-brand) ───────────────────────────── */
+:focus-visible {
+  outline: 2.5px solid var(--color-gold-500);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─── Selection ──────────────────────────────────────────── */
+::selection {
+  background: var(--color-gold-300);
+  color: var(--color-brand-950);
+}
+
+/* ─── Custom scrollbar ───────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-parchment); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-700);
+  border-radius: 3px;
+}
+
+/* ─── Islamic geometric background pattern ───────────────── */
+.bg-geometric {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23065f46' fill-opacity='0.035'%3E%3Cpath d='M30 0l8.66 5v10L30 20l-8.66-5V5zm0 40l8.66 5v10L30 60l-8.66-5V45zM0 20l8.66 5v10L0 40l-8.66-5V25zm60 0l8.66 5v10L60 40l-8.66-5V25z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ─── Grain texture overlay ──────────────────────────────── */
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* ─── Reduced motion ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── Pricing table ──────────────────────────────────────── */
+.pricing-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.pricing-table th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--color-brand-900);
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  white-space: nowrap;
+}
+.pricing-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--color-sand);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+.pricing-table tr:nth-child(even) td {
+  background: var(--color-parchment);
+}
+.pricing-table tr:hover td {
+  background: var(--color-gold-50);
+  cursor: pointer;
+}
+.pricing-table td:first-child {
+  font-weight: 600;
+  color: var(--color-brand-900);
+  white-space: normal;
+  min-width: 180px;
+}
