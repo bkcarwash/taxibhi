@@ -93,6 +93,9 @@ export const metadata: Metadata = {
     },
   },
   alternates: { canonical: "https://www.taxibhai.com" },
+  verification: {
+    google: "k2jcHA2ABG0DA_ExzDC7DyjYLUP9q6Wsxb_NRSxNmAw",
+  },
 };
 
 export default function RootLayout({
