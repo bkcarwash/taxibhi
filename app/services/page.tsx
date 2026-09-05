@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { generateBreadcrumbJsonLd, generateServiceJsonLdItems } from "@/lib/schema/jsonLd";
 import { CtaBanner } from "@/components/sections/CtaBanner";
+import { Fleet } from "@/components/sections/Fleet";
 import { routes } from "@/lib/data/routes";
 import { ArrowRight, Plane, MapPin, Hotel, Car, Clock } from "lucide-react";
 
@@ -196,6 +197,7 @@ export default function ServicesPage() {
         </div>
       </div>
 
+      <Fleet />
       <CtaBanner />
     </>
   );

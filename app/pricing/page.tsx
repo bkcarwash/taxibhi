@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { generateBreadcrumbJsonLd, generateServiceJsonLdItems } from "@/lib/schema/jsonLd";
 import { FareFinder } from "@/components/sections/FareFinder";
+import { Fleet } from "@/components/sections/Fleet";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { routes } from "@/lib/data/routes";
 import { vehicles } from "@/lib/data/vehicles";
@@ -53,6 +54,9 @@ export default function PricingPage() {
           </p>
         </div>
       </div>
+
+      {/* Vehicle fleet showcase */}
+      <Fleet />
 
       {/* Interactive fare finder */}
       <FareFinder />
