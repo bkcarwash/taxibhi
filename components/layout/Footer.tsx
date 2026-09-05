@@ -18,6 +18,7 @@ const pageLinks = [
   { label: "Our Services", href: "/services" },
   { label: "Pricing & Routes", href: "/pricing" },
   { label: "Book a Ride", href: "/book-ride" },
+  { label: "FAQ", href: "/faq" },
   { label: "Contact Us", href: "/contact" },
 ];
 

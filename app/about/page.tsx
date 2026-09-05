@@ -4,10 +4,16 @@ import { CtaBanner } from "@/components/sections/CtaBanner";
 import { Star, Car, Users, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Taxi Bhai — Trusted Umrah Taxi Service",
+  title: "About Taxi Bhai — Experienced Umrah Taxi Service in Makkah, Madinah & Jeddah",
   description:
-    "Taxi Bhai is a professional Umrah taxi service in Makkah, Madinah, and Jeddah offering private transfers for pilgrims and families, with experienced drivers, transparent fares, and a modern fleet.",
+    "Taxi Bhai is a professional, 5.0-star-rated private Umrah taxi service covering Makkah, Madinah, Jeddah, Taif, and Badr. Experienced drivers, modern fleet, transparent fixed fares, available 24/7.",
   alternates: { canonical: "https://www.taxibhai.com/about" },
+  openGraph: {
+    title: "About Taxi Bhai — Trusted Umrah Taxi Service | 5.0 ★ Google Rating",
+    description:
+      "Professional private Umrah taxi in Makkah, Madinah & Jeddah. 6 vehicle types, experienced drivers, fixed fares. 5.0 ★ rated. Available 24/7.",
+    url: "https://www.taxibhai.com/about",
+  },
 };
 
 const stats = [

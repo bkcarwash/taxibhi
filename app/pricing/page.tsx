@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { generateBreadcrumbJsonLd, generateServiceJsonLdItems } from "@/lib/schema/jsonLd";
+import {
+  generateBreadcrumbJsonLd,
+  generateServiceJsonLdItems,
+  generateRouteItemListJsonLd,
+  generateWebPageJsonLd,
+} from "@/lib/schema/jsonLd";
 import { FareFinder } from "@/components/sections/FareFinder";
 import { Fleet } from "@/components/sections/Fleet";
 import { CtaBanner } from "@/components/sections/CtaBanner";
@@ -12,10 +17,16 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Taxi Fares & Pricing — Umrah Taxi Routes | SAR Pricing Table",
+  title: "Umrah Taxi Fares & Pricing — All Routes in SAR | Taxi Bhai",
   description:
-    "Full Taxi Bhai pricing table for all Umrah routes: Jeddah Airport to Makkah from SAR 250, Makkah to Madinah from SAR 450, Madinah Airport from SAR 100. Fixed fares, no hidden charges.",
+    "Full fixed-fare pricing for all Umrah taxi routes: Jeddah Airport → Makkah from SAR 250, Makkah → Madinah from SAR 450, Madinah Airport → Hotel from SAR 100, Makkah Ziyarat from SAR 200. No hidden charges.",
   alternates: { canonical: "https://www.taxibhai.com/pricing" },
+  openGraph: {
+    title: "Umrah Taxi Prices — SAR Fixed Fares for All Routes | Taxi Bhai",
+    description:
+      "Jeddah Airport to Makkah SAR 250 · Makkah to Madinah SAR 450 · Madinah Airport SAR 100 · Ziyarat from SAR 200. All fixed fares, no hidden charges.",
+    url: "https://www.taxibhai.com/pricing",
+  },
 };
 
 export default function PricingPage() {
@@ -24,12 +35,33 @@ export default function PricingPage() {
     { name: "Pricing", url: "https://www.taxibhai.com/pricing" },
   ]);
   const serviceLdItems = generateServiceJsonLdItems();
+  const itemListLd = generateRouteItemListJsonLd();
+  const webPageLd = generateWebPageJsonLd({
+    type: "WebPage",
+    name: "Umrah Taxi Fares & Pricing — All Routes in SAR | Taxi Bhai",
+    description:
+      "Fixed-fare pricing for all Umrah taxi routes in Saudi Arabia. Jeddah Airport to Makkah from SAR 250, Makkah to Madinah from SAR 450.",
+    url: "https://www.taxibhai.com/pricing",
+    breadcrumb: [
+      { name: "Home", url: "https://www.taxibhai.com" },
+      { name: "Pricing", url: "https://www.taxibhai.com/pricing" },
+    ],
+    speakableSelectors: ["h1", "h2", ".pricing-answer", "p.text-brand-600"],
+  });
 
   return (
     <>
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLd) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }}
       />
       {serviceLdItems.map((s, i) => (
         <script

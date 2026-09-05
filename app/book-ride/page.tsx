@@ -4,10 +4,16 @@ import { BookingForm } from "@/components/booking/BookingForm";
 import { Star, Clock, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Book a Ride — Book Your Umrah Taxi on WhatsApp",
+  title: "Book an Umrah Taxi — Fixed Fares, Instant WhatsApp Booking | Taxi Bhai",
   description:
-    "Book a private Umrah taxi with Taxi Bhai. Fill in your route, vehicle, and travel details — the form builds a WhatsApp booking message instantly. 24/7 availability, fixed fares.",
+    "Book a private Umrah taxi online: select your route (Jeddah Airport→Makkah, Makkah→Madinah, Ziyarat tours), choose your vehicle, and send a pre-filled WhatsApp booking instantly. 24/7, fixed SAR fares.",
   alternates: { canonical: "https://www.taxibhai.com/book-ride" },
+  openGraph: {
+    title: "Book an Umrah Taxi — Instant WhatsApp Booking | Taxi Bhai",
+    description:
+      "Fill in your route and vehicle — the form sends a pre-filled WhatsApp booking to Taxi Bhai. Confirmed within minutes, 24/7.",
+    url: "https://www.taxibhai.com/book-ride",
+  },
 };
 
 const steps = [

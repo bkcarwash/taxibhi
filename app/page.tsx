@@ -15,6 +15,8 @@ import {
   generateFAQPageJsonLd,
   generateReviewsJsonLd,
   generateBreadcrumbJsonLd,
+  generateHowToBookJsonLd,
+  generateWebPageJsonLd,
 } from "@/lib/schema/jsonLd";
 import { routes } from "@/lib/data/routes";
 import { pricingTable } from "@/lib/data/pricing";
@@ -23,14 +25,30 @@ import { vehicles } from "@/lib/data/vehicles";
 export const metadata: Metadata = {
   title: "Taxi Bhai — Umrah Taxi Service | Makkah, Madinah & Jeddah",
   description:
-    "Affordable 24/7 private Umrah taxi in Makkah, Madinah & Jeddah. Airport transfers from SAR 150, Makkah–Madinah from SAR 450, hotel-to-hotel transfers and Ziyarah tours. 5.0 ★ Google Reviews. Book on WhatsApp.",
+    "Book a private Umrah taxi 24/7 — Jeddah Airport to Makkah from SAR 250, Makkah to Madinah from SAR 450. Fixed fares, airport meet-and-greet, Ziyarah tours. 5.0 ★ on Google. WhatsApp +966 57 306 7785.",
   alternates: { canonical: "https://www.taxibhai.com" },
+  openGraph: {
+    title: "Taxi Bhai — Private Umrah Taxi | Makkah · Madinah · Jeddah",
+    description:
+      "24/7 private Umrah taxi. Airport transfers from SAR 250, Makkah–Madinah from SAR 450. Fixed fares, 5.0 ★ Google. Book on WhatsApp.",
+    url: "https://www.taxibhai.com",
+  },
 };
 
 export default function HomePage() {
   const taxiServiceLd = generateTaxiServiceJsonLd();
   const faqLd = generateFAQPageJsonLd();
   const reviewsLd = generateReviewsJsonLd();
+  const howToLd = generateHowToBookJsonLd();
+  const webPageLd = generateWebPageJsonLd({
+    type: "WebPage",
+    name: "Taxi Bhai — Umrah Taxi Service | Makkah, Madinah & Jeddah",
+    description:
+      "Private Umrah taxi service in Saudi Arabia — airport transfers, hotel-to-hotel transfers, and Ziyarah tours. Fixed fares 24/7.",
+    url: "https://www.taxibhai.com",
+    breadcrumb: [{ name: "Home", url: "https://www.taxibhai.com" }],
+    speakableSelectors: ["h1", ".trust-bar", ".faq-answer", ".pricing-answer"],
+  });
   const breadcrumbLd = generateBreadcrumbJsonLd([
     { name: "Home", url: "https://www.taxibhai.com" },
   ]);
@@ -39,11 +57,19 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLd) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(taxiServiceLd) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
       />
       {reviewsLd.map((r, i) => (
         <script

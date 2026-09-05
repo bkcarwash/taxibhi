@@ -7,10 +7,16 @@ import { routes } from "@/lib/data/routes";
 import { ArrowRight, Plane, MapPin, Hotel, Car, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Umrah Taxi Services — Airport Transfers, Ziyarah Tours & Hotel Transfers",
+  title: "Umrah Taxi Services — Airport Transfers, Ziyarah Tours & Hotel Transfers in Saudi Arabia",
   description:
-    "Taxi Bhai offers private airport pick-ups from Jeddah & Madinah airports, hotel-to-hotel transfers between Makkah and Madinah, and private Ziyarah tours. 24/7, fixed fares. Book on WhatsApp.",
+    "Taxi Bhai services: private airport pick-ups from Jeddah (JED) & Madinah (MED), Makkah–Madinah hotel transfers, Makkah Ziyarat, Madinah Ziyarat, Taif & Badr day trips. 24/7, fixed fares. Book on WhatsApp.",
   alternates: { canonical: "https://www.taxibhai.com/services" },
+  openGraph: {
+    title: "Umrah Taxi Services | Airport Transfers · Ziyarah Tours · Hotel Transfers",
+    description:
+      "Private airport pick-ups, inter-city hotel transfers, and Ziyarah tours across Saudi Arabia. 24/7, fixed fares, no hidden charges.",
+    url: "https://www.taxibhai.com/services",
+  },
 };
 
 const serviceCategories = [

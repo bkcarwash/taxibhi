@@ -3,10 +3,16 @@ import { generateBreadcrumbJsonLd } from "@/lib/schema/jsonLd";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Taxi Bhai — Phone, WhatsApp & Email",
+  title: "Contact Taxi Bhai — WhatsApp, Phone & Email | 24/7 Umrah Taxi",
   description:
-    "Contact Taxi Bhai: Saudi Arabia +966 57 306 7785, UK +44 7413 467638, Pakistan +92 371 2300606, or email info@taxibhai.com. Available 24/7 across Makkah, Madinah, and Jeddah.",
+    "Contact Taxi Bhai: WhatsApp or call +966 57 306 7785 (Saudi Arabia), +44 7413 467638 (UK), +92 371 2300606 (Pakistan), or email info@taxibhai.com. Book your Umrah taxi 24/7.",
   alternates: { canonical: "https://www.taxibhai.com/contact" },
+  openGraph: {
+    title: "Contact Taxi Bhai — WhatsApp +966 57 306 7785 | 24/7",
+    description:
+      "Reach Taxi Bhai by WhatsApp, phone, or email. Saudi +966 57 306 7785 · UK +44 7413 467638 · PK +92 371 2300606. Available 24/7.",
+    url: "https://www.taxibhai.com/contact",
+  },
 };
 
 const contacts = [

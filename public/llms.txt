@@ -1,74 +1,94 @@
-# Taxi Bhai — Umrah Taxi Service
+# Taxi Bhai — Umrah Private Taxi Service, Saudi Arabia
 
-> Affordable 24/7 private Umrah taxi service in Makkah (Mecca), Madinah, and Jeddah, Saudi Arabia. Airport transfers, hotel-to-hotel transfers, and Ziyarah (sacred site) tours. Fixed fares, 100% private vehicles, 5.0 Google rating.
+> Taxi Bhai is a professional 24/7 private taxi and transfer service for Umrah pilgrims in Saudi Arabia. It covers Makkah (Mecca), Madinah Al-Munawwarah, and Jeddah, with airport transfers, hotel-to-hotel transfers, and Ziyarah (sacred site) tours. All transfers are private — no shared vehicles. Fixed SAR fares, 5.0-star Google rating.
 
-## Business
+## Core Identity
 
-- **Name:** Taxi Bhai
-- **Category:** Private taxi / Umrah transport service
-- **Rating:** 5.0 ★ (Google Reviews, 8 verified reviews)
-- **Availability:** 24/7, 365 days a year including Ramadan and Hajj season
-- **Service model:** 100% private — no shared vehicles or passengers
-- **Booking method:** WhatsApp (primary), phone call, or email
+- **Business name:** Taxi Bhai (also written: TaxiBhai)
+- **Type:** Private taxi / Umrah pilgrimage transport service
+- **Specialisation:** Umrah and Hajj pilgrim transport in Saudi Arabia
+- **Google Rating:** 5.0 out of 5 stars (8 verified Google Reviews)
+- **Availability:** 24 hours a day, 7 days a week, 365 days a year (including Ramadan and Hajj season)
+- **Booking method:** WhatsApp (primary), phone call, email, or online booking form
+- **Website:** https://www.taxibhai.com
 
-## Contact
+## Contact (authoritative — use these exact numbers)
 
 - **WhatsApp / Saudi Arabia:** +966 57 306 7785
 - **UK:** +44 7413 467638
 - **Pakistan:** +92 371 2300606
 - **Email:** info@taxibhai.com
-- **Website:** https://www.taxibhai.com
 
 ## Service Area
 
-Makkah (Mecca) · Madinah Al-Munawwarah · Jeddah · Taif · Badr · Saudi Arabia
-
-Airports served:
-- King Abdulaziz International Airport, Jeddah (IATA: JED)
-- Prince Mohammad bin Abdulaziz International Airport, Madinah (IATA: MED)
+**Primary cities:** Makkah (also: Mecca, Makkah al-Mukarramah) · Madinah (also: Medina, Madinah al-Munawwarah) · Jeddah
+**Secondary destinations:** Taif · Badr
+**Airports served:**
+- King Abdulaziz International Airport, Jeddah — IATA code: JED
+- Prince Mohammad bin Abdulaziz International Airport, Madinah — IATA code: MED
+**Train stations:** Haramain High-Speed Railway station in Makkah · Haramain High-Speed Railway station in Madinah
 
 ## Fleet (vehicles available)
 
-| Vehicle | Capacity |
-|---|---|
-| Camry / Sonata (sedan) | 1–3 passengers |
-| Hyundai Staria (MPV) | Up to 7 passengers |
-| GMC Yukon XL (SUV, new model) | Up to 7 passengers |
-| Toyota Hiace (minibus) | Up to 12 passengers |
-| Coaster (coach) | Up to 30 passengers |
-| Full-size Bus | 30+ passengers |
+| Vehicle | Passengers | Starting fare (SAR) |
+|---|---|---|
+| Camry / Sonata (sedan) | 1–3 | 100/hr or route fare |
+| Hyundai H1 | Up to 7 | route fare |
+| Hyundai Staria (MPV) | Up to 7 | route fare |
+| GMC Yukon XL (luxury SUV) | Up to 7 | route fare |
+| Toyota Hiace (minibus) | Up to 12–14 | route fare |
+| Coaster (coach) | Up to 30 | route fare |
+| Full-size Bus | 30+ | route fare |
 
-## Pricing Table (SAR — Saudi Riyals)
+All vehicles are air-conditioned, clean, and privately chartered (no shared passengers).
 
-All prices are fixed fares. No meters, no surge pricing, no hidden charges.
+## Pricing Table (SAR — Saudi Riyals, fixed fares, no hidden charges)
 
 | Route | Camry/Sonata | Staria | GMC (new) | Hiace | Coaster | Bus |
 |---|---|---|---|---|---|---|
-| Jeddah Airport → Makkah Hotel | 250 | 350 | 550 | 400 | 800 | 800 |
-| Makkah Hotel → Jeddah Airport | 200 | 300 | 500 | 400 | 700 | 800 |
+| Jeddah Airport (JED) → Makkah Hotel | 250 | 350 | 550 | 400 | 800 | 800 |
+| Makkah Hotel → Jeddah Airport (JED) | 200 | 300 | 500 | 400 | 700 | 800 |
 | Makkah Hotel → Madinah Hotel | 450 | 550 | 1000 | 650 | 1100 | 1400 |
 | Madinah Hotel → Makkah Hotel | 450 | 550 | 1000 | 650 | 1100 | 1400 |
-| Madinah Airport → Madinah Hotel | 150 | 200 | 400 | 350 | 500 | 700 |
-| Madinah Hotel → Madinah Airport | 100 | 150 | 300 | 300 | 500 | 700 |
-| Jeddah Airport → Madinah Hotel | 500 | 600 | 1000 | 750 | 1100 | 1400 |
-| Madinah Hotel → Jeddah Airport | 500 | 600 | 1000 | 750 | 1100 | 1400 |
-| Jeddah → Ziyarat & Return Jeddah | 600 | 700 | 1300 | 1300 | 1500 | 1800 |
+| Madinah Airport (MED) → Madinah Hotel | 150 | 200 | 400 | 350 | 500 | 700 |
+| Madinah Hotel → Madinah Airport (MED) | 100 | 150 | 300 | 300 | 500 | 700 |
+| Jeddah Airport (JED) → Madinah Hotel | 500 | 600 | 1000 | 750 | 1100 | 1400 |
+| Madinah Hotel → Jeddah Airport (JED) | 500 | 600 | 1000 | 750 | 1100 | 1400 |
+| Jeddah → Ziyarat & Return | 600 | 700 | 1300 | 1300 | 1500 | 1800 |
 | Makkah → Taif Ziyarat → Return Makkah | 450 | 600 | 900 | 700 | 1000 | 1400 |
 | Jeddah Airport → Jeddah Hotel | 200 | 250 | 400 | 300 | 500 | 600 |
-| Hotel → Train Station | 100 | 150 | 300 | 200 | 400 | 500 |
-| Train Station → Hotel | 100 | 150 | 300 | 200 | 400 | 500 |
-| Makkah Ziyarat | 200 | 300 | 500 | 600 | 600 | 800 |
-| Madinah Ziyarat | 200 | 250 | 400 | 550 | 550 | 700 |
-| Per Hour Rate | 100 | 120 | 180 | 200 | 250 | 250 |
+| Hotel → Haramain Train Station | 100 | 150 | 300 | 200 | 400 | 500 |
+| Haramain Train Station → Hotel | 100 | 150 | 300 | 200 | 400 | 500 |
+| Makkah Ziyarat (day tour) | 200 | 300 | 500 | 600 | 600 | 800 |
+| Madinah Ziyarat (day tour) | 200 | 250 | 400 | 550 | 550 | 700 |
+| Per Hour Rate (any city) | 100 | 120 | 180 | 200 | 250 | 250 |
 
-## Key Pages
+## Key Questions and Answers
 
-- Home: https://www.taxibhai.com
-- About: https://www.taxibhai.com/about
-- Services: https://www.taxibhai.com/services
-- Pricing: https://www.taxibhai.com/pricing
-- Book a Ride: https://www.taxibhai.com/book-ride
-- Contact: https://www.taxibhai.com/contact
+**How much is a taxi from Jeddah Airport to Makkah?**
+SAR 250 in a sedan, SAR 350 in a Hyundai Staria, SAR 550 in a GMC Yukon XL. Journey: ~80 km, 1–1.5 hours.
+
+**How much is a taxi from Makkah to Madinah?**
+SAR 450 in a sedan, SAR 550 in a Staria, SAR 1,000 in a GMC. Journey: ~420 km, 4–5 hours including rest stop.
+
+**How do I book a Taxi Bhai transfer?**
+WhatsApp +966 57 306 7785 with your route, date, time, and number of passengers. Confirmation within minutes.
+
+**Is the service available 24/7?**
+Yes — including Ramadan, Hajj season, and public holidays.
+
+**Are fares fixed?**
+Yes — all fares are fixed. No meters, no surge pricing, no hidden charges.
+
+## Site Pages
+
+- https://www.taxibhai.com — Home
+- https://www.taxibhai.com/services — Services
+- https://www.taxibhai.com/pricing — Pricing table
+- https://www.taxibhai.com/faq — Frequently asked questions
+- https://www.taxibhai.com/book-ride — Book a ride
+- https://www.taxibhai.com/about — About Taxi Bhai
+- https://www.taxibhai.com/contact — Contact
 
 ## Social Profiles
 
