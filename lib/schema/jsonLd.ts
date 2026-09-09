@@ -180,15 +180,13 @@ export function generateTaxiServiceJsonLd() {
     openingHours: "Mo-Su 00:00-23:59",
     areaServed: AREA_SERVED,
     provider: { "@id": `${SITE_URL}/#organization` },
-    aggregateRating: AGGREGATE_RATING,
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Taxi Bhai Umrah Transfer Routes",
-      itemListElement: pricingTable.map((row, i) => {
+      itemListElement: pricingTable.map((row) => {
         const route = routes.find((r) => r.id === row.routeId);
         return {
           "@type": "Offer",
-          position: i + 1,
           name: route?.label ?? row.routeId,
           description: route?.description ?? "",
           priceCurrency: "SAR",
