@@ -95,7 +95,7 @@ export function generateSiteGraphJsonLd() {
         email: "info@taxibhai.com",
         image: `${SITE_URL}/og-image.png`,
         logo: { "@id": `${SITE_URL}/#logo` },
-        hasMap: "https://maps.app.goo.gl/taxibhai",
+        hasMap: "https://maps.google.com/?q=Taxi+Bhai,+Makkah,+Saudi+Arabia",
         geo: {
           "@type": "GeoCoordinates",
           latitude: 21.3891,
@@ -199,7 +199,6 @@ export function generateTaxiServiceJsonLd() {
             priceCurrency: "SAR",
             valueAddedTaxIncluded: true,
           },
-          eligibleTransportModes: "PrivateVehicle",
           availability: "https://schema.org/InStock",
         };
       }),
@@ -265,9 +264,10 @@ export function generateReviewsJsonLd() {
     "@context": "https://schema.org",
     "@type": "Review",
     itemReviewed: {
-      "@type": "TaxiService",
-      "@id": `${SITE_URL}/#taxiservice`,
+      "@type": "LocalBusiness",
+      "@id": `${SITE_URL}/#localbusiness`,
       name: "Taxi Bhai",
+      image: `${SITE_URL}/og-image.png`,
     },
     author: {
       "@type": "Person",
@@ -279,6 +279,7 @@ export function generateReviewsJsonLd() {
       bestRating: 5,
       worstRating: 1,
     },
+    name: t.route,
     reviewBody: t.body,
     datePublished: t.datePublished,
     publisher: {
@@ -350,6 +351,7 @@ export function generateLocalBusinessJsonLd() {
     email: "info@taxibhai.com",
     image: `${SITE_URL}/og-image.png`,
     logo: `${SITE_URL}/images/logo/taxibhai-logo-header.webp`,
+    hasMap: "https://maps.google.com/?q=Taxi+Bhai,+Makkah,+Saudi+Arabia",
     geo: {
       "@type": "GeoCoordinates",
       latitude: 21.3891,
