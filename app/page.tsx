@@ -26,12 +26,12 @@ export const metadata: Metadata = {
   title: "Taxi Bhai — Umrah Taxi Service | Makkah, Madinah & Jeddah",
   description:
     "Book a private Umrah taxi 24/7 — Jeddah Airport to Makkah from SAR 250, Makkah to Madinah from SAR 450. Fixed fares, airport meet-and-greet, Ziyarah tours. 5.0 ★ on Google. WhatsApp +966 57 306 7785.",
-  alternates: { canonical: "https://taxibhai.com" },
+  alternates: { canonical: "https://www.taxibhai.com" },
   openGraph: {
     title: "Taxi Bhai — Private Umrah Taxi | Makkah · Madinah · Jeddah",
     description:
       "24/7 private Umrah taxi. Airport transfers from SAR 250, Makkah–Madinah from SAR 450. Fixed fares, 5.0 ★ Google. Book on WhatsApp.",
-    url: "https://taxibhai.com",
+    url: "https://www.taxibhai.com",
   },
 };
 
@@ -45,12 +45,12 @@ export default function HomePage() {
     name: "Taxi Bhai — Umrah Taxi Service | Makkah, Madinah & Jeddah",
     description:
       "Private Umrah taxi service in Saudi Arabia — airport transfers, hotel-to-hotel transfers, and Ziyarah tours. Fixed fares 24/7.",
-    url: "https://taxibhai.com",
-    breadcrumb: [{ name: "Home", url: "https://taxibhai.com" }],
+    url: "https://www.taxibhai.com",
+    breadcrumb: [{ name: "Home", url: "https://www.taxibhai.com" }],
     speakableSelectors: ["h1", ".trust-bar", ".faq-answer", ".pricing-answer"],
   });
   const breadcrumbLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: "https://taxibhai.com" },
+    { name: "Home", url: "https://www.taxibhai.com" },
   ]);
 
   return (

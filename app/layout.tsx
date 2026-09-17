@@ -20,7 +20,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://taxibhai.com"),
+  metadataBase: new URL("https://www.taxibhai.com"),
   title: {
     default: "Taxi Bhai — Umrah Taxi Service | Makkah, Madinah & Jeddah",
     template: "%s | Taxi Bhai",
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
     "taxi Mecca Medina",
     "pilgrim transfer Saudi Arabia",
   ],
-  authors: [{ name: "Taxi Bhai", url: "https://taxibhai.com" }],
+  authors: [{ name: "Taxi Bhai", url: "https://www.taxibhai.com" }],
   creator: "Taxi Bhai",
   publisher: "Taxi Bhai",
   category: "Transportation",
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://taxibhai.com",
+    url: "https://www.taxibhai.com",
     siteName: "Taxi Bhai",
     title: "Taxi Bhai — Reliable Umrah Taxi Service | Makkah · Madinah · Jeddah",
     description:
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: { canonical: "https://taxibhai.com" },
+  alternates: { canonical: "https://www.taxibhai.com" },
   verification: {
     google: "k2jcHA2ABG0DA_ExzDC7DyjYLUP9q6Wsxb_NRSxNmAw",
   },

@@ -20,19 +20,19 @@ export const metadata: Metadata = {
   title: "Umrah Taxi Fares & Pricing — All Routes in SAR | Taxi Bhai",
   description:
     "Full fixed-fare pricing for all Umrah taxi routes: Jeddah Airport → Makkah from SAR 250, Makkah → Madinah from SAR 450, Madinah Airport → Hotel from SAR 100, Makkah Ziyarat from SAR 200. No hidden charges.",
-  alternates: { canonical: "https://taxibhai.com/pricing" },
+  alternates: { canonical: "https://www.taxibhai.com/pricing" },
   openGraph: {
     title: "Umrah Taxi Prices — SAR Fixed Fares for All Routes | Taxi Bhai",
     description:
       "Jeddah Airport to Makkah SAR 250 · Makkah to Madinah SAR 450 · Madinah Airport SAR 100 · Ziyarat from SAR 200. All fixed fares, no hidden charges.",
-    url: "https://taxibhai.com/pricing",
+    url: "https://www.taxibhai.com/pricing",
   },
 };
 
 export default function PricingPage() {
   const breadcrumbLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: "https://taxibhai.com" },
-    { name: "Pricing", url: "https://taxibhai.com/pricing" },
+    { name: "Home", url: "https://www.taxibhai.com" },
+    { name: "Pricing", url: "https://www.taxibhai.com/pricing" },
   ]);
   const serviceLdItems = generateServiceJsonLdItems();
   const itemListLd = generateRouteItemListJsonLd();
@@ -41,10 +41,10 @@ export default function PricingPage() {
     name: "Umrah Taxi Fares & Pricing — All Routes in SAR | Taxi Bhai",
     description:
       "Fixed-fare pricing for all Umrah taxi routes in Saudi Arabia. Jeddah Airport to Makkah from SAR 250, Makkah to Madinah from SAR 450.",
-    url: "https://taxibhai.com/pricing",
+    url: "https://www.taxibhai.com/pricing",
     breadcrumb: [
-      { name: "Home", url: "https://taxibhai.com" },
-      { name: "Pricing", url: "https://taxibhai.com/pricing" },
+      { name: "Home", url: "https://www.taxibhai.com" },
+      { name: "Pricing", url: "https://www.taxibhai.com/pricing" },
     ],
     speakableSelectors: ["h1", "h2", ".pricing-answer", "p.text-brand-600"],
   });

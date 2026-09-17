@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const INDEXNOW_KEY = "a1b2c3d4e5f6789012345678901234ab";
-const SITE_URL = "https://taxibhai.com";
+const SITE_URL = "https://www.taxibhai.com";
 
 const URLS = [
   `${SITE_URL}/`,
@@ -16,7 +16,7 @@ const URLS = [
 export async function GET() {
   try {
     const payload = {
-      host: "taxibhai.com",
+      host: "www.taxibhai.com",
       key: INDEXNOW_KEY,
       keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
       urlList: URLS,

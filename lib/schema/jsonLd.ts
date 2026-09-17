@@ -4,7 +4,7 @@ import { routes } from "@/lib/data/routes";
 import { vehicles } from "@/lib/data/vehicles";
 import { pricingTable } from "@/lib/data/pricing";
 
-const SITE_URL = "https://taxibhai.com";
+const SITE_URL = "https://www.taxibhai.com";
 
 const AGGREGATE_RATING = {
   "@type": "AggregateRating",

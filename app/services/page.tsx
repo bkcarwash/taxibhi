@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Umrah Taxi Services — Airport Transfers, Ziyarah Tours & Hotel Transfers in Saudi Arabia",
   description:
     "Taxi Bhai services: private airport pick-ups from Jeddah (JED) & Madinah (MED), Makkah–Madinah hotel transfers, Makkah Ziyarat, Madinah Ziyarat, Taif & Badr day trips. 24/7, fixed fares. Book on WhatsApp.",
-  alternates: { canonical: "https://taxibhai.com/services" },
+  alternates: { canonical: "https://www.taxibhai.com/services" },
   openGraph: {
     title: "Umrah Taxi Services | Airport Transfers · Ziyarah Tours · Hotel Transfers",
     description:
       "Private airport pick-ups, inter-city hotel transfers, and Ziyarah tours across Saudi Arabia. 24/7, fixed fares, no hidden charges.",
-    url: "https://taxibhai.com/services",
+    url: "https://www.taxibhai.com/services",
   },
 };
 
@@ -84,8 +84,8 @@ const serviceCategories = [
 
 export default function ServicesPage() {
   const breadcrumbLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: "https://taxibhai.com" },
-    { name: "Services", url: "https://taxibhai.com/services" },
+    { name: "Home", url: "https://www.taxibhai.com" },
+    { name: "Services", url: "https://www.taxibhai.com/services" },
   ]);
   const serviceLdItems = generateServiceJsonLdItems();
 
