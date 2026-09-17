@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "About Taxi Bhai — Experienced Umrah Taxi Service in Makkah, Madinah & Jeddah",
   description:
     "Taxi Bhai is a professional, 5.0-star-rated private Umrah taxi service covering Makkah, Madinah, Jeddah, Taif, and Badr. Experienced drivers, modern fleet, transparent fixed fares, available 24/7.",
-  alternates: { canonical: "https://www.taxibhai.com/about" },
+  alternates: { canonical: "https://taxibhai.com/about" },
   openGraph: {
     title: "About Taxi Bhai — Trusted Umrah Taxi Service | 5.0 ★ Google Rating",
     description:
       "Professional private Umrah taxi in Makkah, Madinah & Jeddah. 6 vehicle types, experienced drivers, fixed fares. 5.0 ★ rated. Available 24/7.",
-    url: "https://www.taxibhai.com/about",
+    url: "https://taxibhai.com/about",
   },
 };
 
@@ -25,8 +25,8 @@ const stats = [
 
 export default function AboutPage() {
   const breadcrumbLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: "https://www.taxibhai.com" },
-    { name: "About", url: "https://www.taxibhai.com/about" },
+    { name: "Home", url: "https://taxibhai.com" },
+    { name: "About", url: "https://taxibhai.com/about" },
   ]);
 
   return (

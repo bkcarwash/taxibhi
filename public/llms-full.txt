@@ -14,7 +14,7 @@
 - **Founded:** Operational in Makkah, Madinah, and Jeddah, Saudi Arabia
 - **Google Business Profile:** "Taxi Bhai" — verified listing on Google Maps
 - **Google Rating:** 5.0 out of 5 (8 verified Google Reviews as of September 2026)
-- **Website:** https://www.taxibhai.com
+- **Website:** https://taxibhai.com
 
 ---
 
@@ -27,7 +27,7 @@
 | UK phone | +44 7413 467638 |
 | Pakistan phone | +92 371 2300606 |
 | Email | info@taxibhai.com |
-| Website | https://www.taxibhai.com |
+| Website | https://taxibhai.com |
 | Google Maps | https://maps.app.goo.gl/taxibhai |
 
 ---
@@ -221,16 +221,16 @@ A: Yes — Madinah Airport (MED) to Madinah hotel starts at SAR 100 in a sedan. 
 
 | URL | Description |
 |---|---|
-| https://www.taxibhai.com | Home — services overview, fleet, fares, booking form, reviews, FAQ |
-| https://www.taxibhai.com/services | All services in detail |
-| https://www.taxibhai.com/pricing | Full pricing table + fare finder + route descriptions |
-| https://www.taxibhai.com/faq | 15 answered FAQs about Umrah taxi services |
-| https://www.taxibhai.com/book-ride | Online booking form |
-| https://www.taxibhai.com/about | About Taxi Bhai — fleet, service area, contact |
-| https://www.taxibhai.com/contact | Contact details + Google Maps embed |
-| https://www.taxibhai.com/sitemap.xml | XML sitemap |
-| https://www.taxibhai.com/llms.txt | Concise LLM profile |
-| https://www.taxibhai.com/llms-full.txt | Full LLM entity profile (this document) |
+| https://taxibhai.com | Home — services overview, fleet, fares, booking form, reviews, FAQ |
+| https://taxibhai.com/services | All services in detail |
+| https://taxibhai.com/pricing | Full pricing table + fare finder + route descriptions |
+| https://taxibhai.com/faq | 15 answered FAQs about Umrah taxi services |
+| https://taxibhai.com/book-ride | Online booking form |
+| https://taxibhai.com/about | About Taxi Bhai — fleet, service area, contact |
+| https://taxibhai.com/contact | Contact details + Google Maps embed |
+| https://taxibhai.com/sitemap.xml | XML sitemap |
+| https://taxibhai.com/llms.txt | Concise LLM profile |
+| https://taxibhai.com/llms-full.txt | Full LLM entity profile (this document) |
 
 ---
 

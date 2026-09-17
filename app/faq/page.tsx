@@ -9,30 +9,30 @@ export const metadata: Metadata = {
   title: "Frequently Asked Questions — Umrah Taxi Service | Taxi Bhai",
   description:
     "Answers to common questions about Taxi Bhai: How much is a taxi from Jeddah Airport to Makkah? How do I book? What vehicles are available? Prices, Ziyarat, group travel, and more.",
-  alternates: { canonical: "https://www.taxibhai.com/faq" },
+  alternates: { canonical: "https://taxibhai.com/faq" },
   openGraph: {
     title: "Umrah Taxi FAQ — Prices, Booking & Services | Taxi Bhai",
     description:
       "Common questions about Umrah taxis in Saudi Arabia: fares, routes, booking method, vehicle types, Ziyarat tours, and more. Answered by Taxi Bhai.",
-    url: "https://www.taxibhai.com/faq",
+    url: "https://taxibhai.com/faq",
   },
 };
 
 export default function FaqPage() {
   const faqLd = generateFAQPageJsonLd();
   const breadcrumbLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: "https://www.taxibhai.com" },
-    { name: "FAQ", url: "https://www.taxibhai.com/faq" },
+    { name: "Home", url: "https://taxibhai.com" },
+    { name: "FAQ", url: "https://taxibhai.com/faq" },
   ]);
   const webPageLd = generateWebPageJsonLd({
     type: "FAQPage",
     name: "Frequently Asked Questions — Taxi Bhai Umrah Taxi Service",
     description:
       "Answers to common questions about Umrah taxi services: prices, routes, booking, vehicles, Ziyarat tours.",
-    url: "https://www.taxibhai.com/faq",
+    url: "https://taxibhai.com/faq",
     breadcrumb: [
-      { name: "Home", url: "https://www.taxibhai.com" },
-      { name: "FAQ", url: "https://www.taxibhai.com/faq" },
+      { name: "Home", url: "https://taxibhai.com" },
+      { name: "FAQ", url: "https://taxibhai.com/faq" },
     ],
     speakableSelectors: [".faq-question", ".faq-answer", "h1"],
   });

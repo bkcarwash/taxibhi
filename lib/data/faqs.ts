@@ -69,7 +69,7 @@ export const faqs: FAQ[] = [
     id: "faq-how-to-book",
     question: "How can I book a Taxi Bhai taxi?",
     answer:
-      "The quickest way to book is via WhatsApp — message +966 57 306 7785 with your pickup location, drop-off location, date, time, number of passengers, and preferred vehicle. You can also use the booking form at https://www.taxibhai.com/book-ride, which builds a pre-filled WhatsApp message automatically. Taxi Bhai also takes calls on +44 7413 467638 (UK) and +92 371 2300606 (Pakistan).",
+      "The quickest way to book is via WhatsApp — message +966 57 306 7785 with your pickup location, drop-off location, date, time, number of passengers, and preferred vehicle. You can also use the booking form at https://taxibhai.com/book-ride, which builds a pre-filled WhatsApp message automatically. Taxi Bhai also takes calls on +44 7413 467638 (UK) and +92 371 2300606 (Pakistan).",
   },
   {
     id: "faq-ziyarat",

@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin", "/admin/", "/api/"],
       },
     ],
-    sitemap: "https://www.taxibhai.com/sitemap.xml",
-    host: "https://www.taxibhai.com",
+    sitemap: "https://taxibhai.com/sitemap.xml",
+    host: "https://taxibhai.com",
   };
 }

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "Book an Umrah Taxi — Fixed Fares, Instant WhatsApp Booking | Taxi Bhai",
   description:
     "Book a private Umrah taxi online: select your route (Jeddah Airport→Makkah, Makkah→Madinah, Ziyarat tours), choose your vehicle, and send a pre-filled WhatsApp booking instantly. 24/7, fixed SAR fares.",
-  alternates: { canonical: "https://www.taxibhai.com/book-ride" },
+  alternates: { canonical: "https://taxibhai.com/book-ride" },
   openGraph: {
     title: "Book an Umrah Taxi — Instant WhatsApp Booking | Taxi Bhai",
     description:
       "Fill in your route and vehicle — the form sends a pre-filled WhatsApp booking to Taxi Bhai. Confirmed within minutes, 24/7.",
-    url: "https://www.taxibhai.com/book-ride",
+    url: "https://taxibhai.com/book-ride",
   },
 };
 
@@ -24,8 +24,8 @@ const steps = [
 
 export default function BookRidePage() {
   const breadcrumbLd = generateBreadcrumbJsonLd([
-    { name: "Home", url: "https://www.taxibhai.com" },
-    { name: "Book a Ride", url: "https://www.taxibhai.com/book-ride" },
+    { name: "Home", url: "https://taxibhai.com" },
+    { name: "Book a Ride", url: "https://taxibhai.com/book-ride" },
   ]);
   const howToLd = generateHowToBookJsonLd();
 
