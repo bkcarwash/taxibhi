@@ -6,12 +6,12 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin", "/admin/", "/api/"],
+        disallow: ["/admin", "/admin/", "/api/", "/ABGFWYB/", "/ABGFWYB"],
       },
       {
         userAgent: "Googlebot",
         allow: "/",
-        disallow: ["/admin", "/admin/", "/api/"],
+        disallow: ["/admin", "/admin/", "/api/", "/ABGFWYB/", "/ABGFWYB"],
       },
     ],
     sitemap: "https://www.taxibhai.com/sitemap.xml",
