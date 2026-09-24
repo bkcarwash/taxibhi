@@ -34,7 +34,7 @@ export default function FaqPage() {
       { name: "Home", url: "https://www.taxibhai.com" },
       { name: "FAQ", url: "https://www.taxibhai.com/faq" },
     ],
-    speakableSelectors: [".faq-question", ".faq-answer", "h1"],
+    speakableSelectors: ["h1", ".faq-question", ".faq-answer"],
   });
 
   return (
@@ -52,7 +52,7 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
-      {/* Breadcrumb */}
+      {/* Hero */}
       <div className="bg-brand-900 pt-28 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center gap-1.5 text-brand-400 text-xs mb-4" aria-label="Breadcrumb">
@@ -73,43 +73,40 @@ export default function FaqPage() {
         </div>
       </div>
 
-      {/* Quick links */}
-      <div className="bg-white border-b border-sand py-4">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap gap-2">
-            {faqs.map((faq) => (
-              <a
-                key={faq.id}
-                href={`#${faq.id}`}
-                className="text-xs text-brand-600 hover:text-brand-800 bg-brand-50 hover:bg-brand-100 border border-brand-100 rounded-full px-3 py-1.5 transition-colors"
-              >
-                {faq.question.length > 50 ? faq.question.slice(0, 50) + "…" : faq.question}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* FAQs */}
+      {/* FAQ list */}
       <section className="py-16 lg:py-24 bg-parchment" aria-labelledby="faq-heading">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6">
+          <h2 id="faq-heading" className="sr-only">All questions</h2>
+
+          <div className="space-y-3">
             {faqs.map((faq, i) => (
-              <article
+              <Link
                 key={faq.id}
-                id={faq.id}
-                className="bg-white border border-sand rounded-2xl p-6 sm:p-8 scroll-mt-24"
+                href={`/faq/${faq.id}`}
+                className="group flex items-start justify-between gap-4 bg-white border border-sand hover:border-brand-300 rounded-2xl px-6 py-5 transition-colors"
               >
-                <h2 className="faq-question font-display text-lg sm:text-xl font-bold text-brand-900 mb-3 flex items-start gap-3">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-brand-800 text-white text-xs font-bold flex items-center justify-center mt-0.5" aria-hidden="true">
+                <div className="flex items-start gap-4 min-w-0">
+                  <span
+                    className="shrink-0 w-7 h-7 rounded-full bg-brand-800 text-white text-xs font-bold flex items-center justify-center mt-0.5"
+                    aria-hidden="true"
+                  >
                     {i + 1}
                   </span>
-                  {faq.question}
-                </h2>
-                <p className="faq-answer text-brand-700/80 leading-relaxed pl-10">
-                  {faq.answer}
-                </p>
-              </article>
+                  <div className="min-w-0">
+                    <p className="faq-question font-display text-base sm:text-lg font-bold text-brand-900 group-hover:text-brand-700 transition-colors leading-snug mb-1.5">
+                      {faq.question}
+                    </p>
+                    <p className="faq-answer text-brand-500 text-sm leading-relaxed line-clamp-2">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+                <ChevronRight
+                  size={18}
+                  className="text-brand-300 group-hover:text-brand-600 shrink-0 mt-1 transition-colors"
+                  aria-hidden="true"
+                />
+              </Link>
             ))}
           </div>
 

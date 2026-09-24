@@ -12,6 +12,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/book-ride`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
 
+    // FAQ individual pages
+    { url: `${BASE}/faq/umrah-service`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${BASE}/faq/jeddah-airport-makkah-price`, lastModified: now, changeFrequency: "monthly", priority: 0.82 },
+    { url: `${BASE}/faq/makkah-madinah-price`, lastModified: now, changeFrequency: "monthly", priority: 0.82 },
+    { url: `${BASE}/faq/airport-pickup`, lastModified: now, changeFrequency: "monthly", priority: 0.78 },
+    { url: `${BASE}/faq/jeddah-makkah-distance`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${BASE}/faq/availability-24-7`, lastModified: now, changeFrequency: "monthly", priority: 0.72 },
+    { url: `${BASE}/faq/makkah-madinah-duration`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/faq/vehicles`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${BASE}/faq/large-groups`, lastModified: now, changeFrequency: "monthly", priority: 0.72 },
+    { url: `${BASE}/faq/payment`, lastModified: now, changeFrequency: "monthly", priority: 0.72 },
+    { url: `${BASE}/faq/how-to-book`, lastModified: now, changeFrequency: "monthly", priority: 0.78 },
+    { url: `${BASE}/faq/ziyarat-tours`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${BASE}/faq/same-day-booking`, lastModified: now, changeFrequency: "monthly", priority: 0.72 },
+    { url: `${BASE}/faq/makkah-to-taif`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/faq/madinah-to-badr`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+
     // Services hub + pillars
     { url: `${BASE}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/services/airport-transfers`, lastModified: now, changeFrequency: "monthly", priority: 0.88 },
