@@ -119,6 +119,31 @@ export default function ServicesPage() {
         </div>
       </div>
 
+      {/* Service pillar quick-nav */}
+      <div className="bg-white border-b border-sand">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand-500 mb-4">Detailed service guides</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+            {[
+              { label: "Airport Transfers", href: "/services/airport-transfers" },
+              { label: "Intercity Transfers", href: "/services/intercity-transfers" },
+              { label: "Umrah & Ziyarat", href: "/services/umrah-ziyarat-transport" },
+              { label: "Group & Family", href: "/services/group-family-transport" },
+              { label: "Executive Chauffeur", href: "/services/executive-chauffeur" },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="flex items-center justify-between gap-1.5 border border-sand hover:border-brand-300 rounded-xl px-3 py-2.5 text-xs font-medium text-brand-700 hover:text-brand-900 transition-colors"
+              >
+                {s.label}
+                <ArrowRight size={11} className="text-brand-400 shrink-0" aria-hidden="true" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Service categories */}
       <div className="py-16 lg:py-24 bg-parchment">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -9,10 +9,10 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
+  { href: "/routes", label: "Routes" },
   { href: "/pricing", label: "Pricing" },
   { href: "/faq", label: "FAQ" },
   { href: "/book-ride", label: "Book Ride" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export function Header() {

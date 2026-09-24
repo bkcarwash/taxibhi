@@ -438,3 +438,125 @@ export function generateRouteItemListJsonLd() {
     })),
   };
 }
+
+export function generateServicePillarJsonLd(opts: {
+  serviceId: string;
+  name: string;
+  description: string;
+  pageUrl: string;
+  startingPrice?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${opts.pageUrl}#service`,
+    name: opts.name,
+    description: opts.description,
+    url: opts.pageUrl,
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": `${SITE_URL}/#localbusiness`,
+      name: "Taxi Bhai",
+    },
+    areaServed: AREA_SERVED,
+    serviceType: "Private Transportation",
+    ...(opts.startingPrice && {
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "SAR",
+        description: `Starting from ${opts.startingPrice}`,
+        availability: "https://schema.org/InStock",
+      },
+    }),
+  };
+}
+
+export function generateRoutePageJsonLd(routeId: string, pageUrl: string) {
+  const route = routes.find((r) => r.id === routeId);
+  const pricing = pricingTable.find((p) => p.routeId === routeId);
+  if (!route) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${pageUrl}#service`,
+    name: route.label,
+    description: route.description,
+    url: pageUrl,
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": `${SITE_URL}/#localbusiness`,
+      name: "Taxi Bhai",
+    },
+    areaServed: AREA_SERVED,
+    serviceType: "Private Taxi Transfer",
+    ...(pricing && {
+      offers: vehicles.map((v) => ({
+        "@type": "Offer",
+        name: v.name,
+        description: `${route.label} in a ${v.name} (${v.capacity})`,
+        priceCurrency: "SAR",
+        price: pricing.prices[v.id as keyof typeof pricing.prices] ?? 0,
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          price: pricing.prices[v.id as keyof typeof pricing.prices] ?? 0,
+          priceCurrency: "SAR",
+          valueAddedTaxIncluded: true,
+        },
+        availability: "https://schema.org/InStock",
+        eligibleQuantity: {
+          "@type": "QuantitativeValue",
+          name: v.capacity,
+        },
+      })),
+    }),
+  };
+}
+
+export function generateLocationPageJsonLd(opts: {
+  name: string;
+  description: string;
+  pageUrl: string;
+  lat: number;
+  lng: number;
+  arabicName?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "City",
+    "@id": `${opts.pageUrl}#city`,
+    name: opts.name,
+    ...(opts.arabicName && { alternateName: opts.arabicName }),
+    description: opts.description,
+    url: opts.pageUrl,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: opts.lat,
+      longitude: opts.lng,
+    },
+    containedInPlace: {
+      "@type": "Country",
+      name: "Saudi Arabia",
+      sameAs: "https://en.wikipedia.org/wiki/Saudi_Arabia",
+    },
+  };
+}
+
+export function generatePageFAQJsonLd(
+  items: { question: string; answer: string }[],
+  pageUrl: string
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${pageUrl}#faqpage`,
+    mainEntity: items.map((item, i) => ({
+      "@type": "Question",
+      "@id": `${pageUrl}#faq-${i + 1}`,
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}

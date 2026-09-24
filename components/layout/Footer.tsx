@@ -2,24 +2,24 @@ import Link from "next/link";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const routeLinks = [
-  { label: "Jeddah Airport → Makkah", href: "/pricing#jed-airport-makkah" },
-  { label: "Makkah → Madinah", href: "/pricing#makkah-madinah" },
-  { label: "Madinah → Makkah", href: "/pricing#madinah-makkah" },
-  { label: "Madinah Airport → Hotel", href: "/pricing#med-airport-madinah" },
-  { label: "Makkah Ziyarat", href: "/pricing#makkah-ziyarat" },
-  { label: "Madinah Ziyarat", href: "/pricing#madinah-ziyarat" },
-  { label: "Makkah → Taif", href: "/pricing#makkah-taif-ziyarat" },
-  { label: "View All Pricing", href: "/pricing" },
+  { label: "Jeddah Airport → Makkah", href: "/routes/jeddah-airport-to-makkah" },
+  { label: "Makkah → Madinah", href: "/routes/makkah-to-madinah" },
+  { label: "Madinah → Makkah", href: "/routes/madinah-to-makkah" },
+  { label: "Jeddah Airport → Madinah", href: "/routes/jeddah-airport-to-madinah" },
+  { label: "Madinah Airport → Hotel", href: "/routes/madinah-airport-to-madinah-hotel" },
+  { label: "View All Routes", href: "/routes" },
 ];
 
 const pageLinks = [
   { label: "Home", href: "/" },
-  { label: "About Taxi Bhai", href: "/about" },
-  { label: "Our Services", href: "/services" },
-  { label: "Pricing & Routes", href: "/pricing" },
+  { label: "Services", href: "/services" },
+  { label: "Routes", href: "/routes" },
+  { label: "Locations", href: "/locations" },
+  { label: "Our Fleet", href: "/fleet" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Book a Ride", href: "/book-ride" },
   { label: "FAQ", href: "/faq" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const socials = [
