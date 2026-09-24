@@ -541,6 +541,44 @@ export function generateLocationPageJsonLd(opts: {
   };
 }
 
+export function generateArticleJsonLd(opts: {
+  title: string;
+  description: string;
+  url: string;
+  publishDate: string;
+  lastModified: string;
+  category: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${opts.url}#article`,
+    headline: opts.title,
+    description: opts.description,
+    datePublished: opts.publishDate,
+    dateModified: opts.lastModified,
+    url: opts.url,
+    articleSection: opts.category,
+    inLanguage: "en",
+    author: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "Taxi Bhai",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@id": `${SITE_URL}/#organization`,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${opts.url}#webpage`,
+    },
+    isPartOf: {
+      "@id": `${SITE_URL}/#website`,
+    },
+  };
+}
+
 export function generatePageFAQJsonLd(
   items: { question: string; answer: string }[],
   pageUrl: string

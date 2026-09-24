@@ -29,6 +29,12 @@ const URLS = [
   `${SITE_URL}/book-ride`,
   `${SITE_URL}/about`,
   `${SITE_URL}/contact`,
+  `${SITE_URL}/blog`,
+  `${SITE_URL}/blog/jeddah-airport-to-makkah-taxi-guide`,
+  `${SITE_URL}/blog/makkah-madinah-taxi-vs-train`,
+  `${SITE_URL}/blog/umrah-taxi-booking-guide`,
+  `${SITE_URL}/blog/makkah-ziyarat-sacred-sites-taxi`,
+  `${SITE_URL}/blog/umrah-taxi-prices-2026`,
 ];
 
 export async function GET() {

@@ -16,6 +16,7 @@ const companyLinks = [
   { label: "About", href: "/about" },
   { label: "Our Fleet", href: "/fleet" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "Book a Ride", href: "/book-ride" },
   { label: "Contact", href: "/contact" },

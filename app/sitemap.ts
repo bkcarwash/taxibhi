@@ -39,6 +39,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Fleet
     { url: `${BASE}/fleet`, lastModified: now, changeFrequency: "monthly", priority: 0.82 },
 
+    // Blog hub + posts
+    { url: `${BASE}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE}/blog/jeddah-airport-to-makkah-taxi-guide`, lastModified: now, changeFrequency: "monthly", priority: 0.78 },
+    { url: `${BASE}/blog/makkah-madinah-taxi-vs-train`, lastModified: now, changeFrequency: "monthly", priority: 0.78 },
+    { url: `${BASE}/blog/umrah-taxi-booking-guide`, lastModified: now, changeFrequency: "monthly", priority: 0.78 },
+    { url: `${BASE}/blog/makkah-ziyarat-sacred-sites-taxi`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${BASE}/blog/umrah-taxi-prices-2026`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
     // About + contact
     { url: `${BASE}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
