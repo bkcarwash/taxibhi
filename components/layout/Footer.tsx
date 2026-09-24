@@ -14,6 +14,8 @@ const popularRoutes = [
 const companyLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "Safety", href: "/safety" },
   { label: "Our Fleet", href: "/fleet" },
   { label: "Pricing", href: "/pricing" },
   { label: "Blog", href: "/blog" },
@@ -270,6 +272,16 @@ export function Footer() {
             Madinah Airport (MED) · King Abdulaziz International Airport (JED) ·
             Haramain Train Station · Saudi Arabia
           </p>
+        </div>
+      </div>
+
+      {/* Legal strip */}
+      <div className="border-t border-brand-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap justify-center gap-x-6 gap-y-1">
+          <Link href="/privacy-policy" className="text-brand-500 hover:text-brand-300 text-xs transition-colors">Privacy Policy</Link>
+          <Link href="/terms" className="text-brand-500 hover:text-brand-300 text-xs transition-colors">Terms &amp; Conditions</Link>
+          <Link href="/sitemap" className="text-brand-500 hover:text-brand-300 text-xs transition-colors">Sitemap</Link>
+          <Link href="/policies/booking" className="text-brand-500 hover:text-brand-300 text-xs transition-colors">Booking Policy</Link>
         </div>
       </div>
 

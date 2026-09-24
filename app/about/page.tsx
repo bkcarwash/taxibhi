@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { generateBreadcrumbJsonLd } from "@/lib/schema/jsonLd";
 import { CtaBanner } from "@/components/sections/CtaBanner";
-import { Star, Car, Users, Clock } from "lucide-react";
+import { Star, Car, Users, Clock, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Taxi Bhai — Experienced Umrah Taxi Service in Makkah, Madinah & Jeddah",
@@ -155,6 +156,43 @@ export default function AboutPage() {
             <li>Pakistan: +92 371 2300606</li>
             <li>Email: info@taxibhai.com</li>
           </ul>
+        </div>
+      </div>
+
+      {/* Trust signals */}
+      <div className="py-12 bg-parchment">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-brand-900 rounded-3xl p-8">
+            <h2 className="font-display text-2xl font-bold text-white mb-2 text-center">
+              Why travellers trust us
+            </h2>
+            <p className="text-brand-300 text-center mb-7">
+              Everything you need to book with confidence.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <Link
+                href="/reviews"
+                className="flex items-center justify-between gap-2 bg-white/10 hover:bg-white/20 rounded-xl px-4 py-4 text-white font-semibold transition-colors"
+              >
+                <span>5.0 ★ Reviews</span>
+                <ChevronRight size={14} aria-hidden="true" />
+              </Link>
+              <Link
+                href="/safety"
+                className="flex items-center justify-between gap-2 bg-white/10 hover:bg-white/20 rounded-xl px-4 py-4 text-white font-semibold transition-colors"
+              >
+                <span>Safety standards</span>
+                <ChevronRight size={14} aria-hidden="true" />
+              </Link>
+              <Link
+                href="/policies/booking"
+                className="flex items-center justify-between gap-2 bg-white/10 hover:bg-white/20 rounded-xl px-4 py-4 text-white font-semibold transition-colors"
+              >
+                <span>Booking policy</span>
+                <ChevronRight size={14} aria-hidden="true" />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 

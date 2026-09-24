@@ -50,5 +50,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // About + contact
     { url: `${BASE}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+
+    // Trust + legal pages
+    { url: `${BASE}/reviews`, lastModified: now, changeFrequency: "monthly", priority: 0.82 },
+    { url: `${BASE}/safety`, lastModified: now, changeFrequency: "yearly", priority: 0.65 },
+    { url: `${BASE}/policies/booking`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${BASE}/privacy-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE}/terms`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE}/sitemap`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
   ];
 }
