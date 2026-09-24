@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE = "https://www.taxibhai.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date("2026-09-23");
+  const now = new Date("2026-09-24");
 
   return [
     // Core
@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/services/umrah-ziyarat-transport`, lastModified: now, changeFrequency: "monthly", priority: 0.88 },
     { url: `${BASE}/services/group-family-transport`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
     { url: `${BASE}/services/executive-chauffeur`, lastModified: now, changeFrequency: "monthly", priority: 0.82 },
+    { url: `${BASE}/services/local-city-rides`, lastModified: now, changeFrequency: "monthly", priority: 0.82 },
 
     // Routes hub + route pages
     { url: `${BASE}/routes`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
@@ -27,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/routes/madinah-to-makkah`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/routes/jeddah-airport-to-madinah`, lastModified: now, changeFrequency: "monthly", priority: 0.87 },
     { url: `${BASE}/routes/madinah-airport-to-madinah-hotel`, lastModified: now, changeFrequency: "monthly", priority: 0.87 },
+    { url: `${BASE}/routes/madinah-airport-to-makkah`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
 
     // Locations hub + city pages
     { url: `${BASE}/locations`, lastModified: now, changeFrequency: "monthly", priority: 0.88 },

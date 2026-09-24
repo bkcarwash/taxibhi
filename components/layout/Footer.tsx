@@ -1,24 +1,23 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { services } from "@/lib/data/services";
+import { locations } from "@/lib/data/locations";
 
-const routeLinks = [
+const popularRoutes = [
   { label: "Jeddah Airport → Makkah", href: "/routes/jeddah-airport-to-makkah" },
   { label: "Makkah → Madinah", href: "/routes/makkah-to-madinah" },
   { label: "Madinah → Makkah", href: "/routes/madinah-to-makkah" },
+  { label: "Madinah Airport → Makkah", href: "/routes/madinah-airport-to-makkah" },
   { label: "Jeddah Airport → Madinah", href: "/routes/jeddah-airport-to-madinah" },
-  { label: "Madinah Airport → Hotel", href: "/routes/madinah-airport-to-madinah-hotel" },
-  { label: "View All Routes", href: "/routes" },
 ];
 
-const pageLinks = [
+const companyLinks = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Routes", href: "/routes" },
-  { label: "Locations", href: "/locations" },
+  { label: "About", href: "/about" },
   { label: "Our Fleet", href: "/fleet" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Book a Ride", href: "/book-ride" },
   { label: "FAQ", href: "/faq" },
+  { label: "Book a Ride", href: "/book-ride" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -70,56 +69,102 @@ const socials = [
   },
 ];
 
+const linkClass =
+  "text-brand-300 hover:text-gold-400 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold-400 rounded-sm";
+
+const headingClass =
+  "font-display font-semibold text-white text-sm uppercase tracking-widest mb-4";
+
 export function Footer() {
   return (
     <footer className="bg-brand-950 text-white" aria-label="Site footer">
-      {/* Main footer */}
+      {/* Main footer grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Brand + tagline + socials — full width above the 4 columns */}
+        <div className="mb-10 max-w-md">
+          <Link href="/" className="inline-flex items-center gap-2 mb-4 group">
+            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-brand-700 text-white text-sm font-bold font-display">
+              TB
+            </span>
+            <span className="font-display font-bold text-xl text-white leading-none">
+              Taxi<span className="text-gold-400">Bhai</span>
+            </span>
+          </Link>
+          <p className="text-brand-300 text-sm leading-relaxed mb-6">
+            Professional 24/7 private Umrah taxi service across Makkah (Mecca),
+            Madinah, and Jeddah. Airport transfers, hotel-to-hotel, and Ziyarah tours.
+          </p>
+          <div className="flex items-center gap-3">
+            {socials.map((s) => (
+              <a
+                key={s.name}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Taxi Bhai on ${s.name}`}
+                className="text-brand-400 hover:text-gold-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 rounded-sm"
+              >
+                {s.icon}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* 4-column grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand column */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2 mb-4 group">
-              <span className="flex items-center justify-center w-9 h-9 rounded-full bg-brand-700 text-white text-sm font-bold font-display">
-                TB
-              </span>
-              <span className="font-display font-bold text-xl text-white leading-none">
-                Taxi<span className="text-gold-400">Bhai</span>
-              </span>
-            </Link>
-            <p className="text-brand-300 text-sm leading-relaxed mb-6">
-              Professional 24/7 private Umrah taxi service across Makkah (Mecca),
-              Madinah, and Jeddah. Airport transfers, hotel-to-hotel, and Ziyarah tours.
-            </p>
-
-            {/* Social links */}
-            <div className="flex items-center gap-3">
-              {socials.map((s) => (
-                <a
-                  key={s.name}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Taxi Bhai on ${s.name}`}
-                  className="text-brand-400 hover:text-gold-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 rounded-sm"
-                >
-                  {s.icon}
-                </a>
+          {/* Col 1: Services */}
+          <div>
+            <h3 className={headingClass}>Services</h3>
+            <ul className="space-y-2">
+              {services.map((service) => (
+                <li key={service.slug}>
+                  <Link href={`/services/${service.slug}`} className={linkClass}>
+                    {service.name}
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
-          {/* Routes */}
+          {/* Col 2: Locations & Routes */}
           <div>
-            <h3 className="font-display font-semibold text-white text-sm uppercase tracking-widest mb-4">
+            <h3 className={headingClass}>Locations &amp; Routes</h3>
+            <p className="text-brand-400 text-xs uppercase tracking-wider mb-2">Cities</p>
+            <ul className="space-y-2 mb-5">
+              {locations.map((loc) => (
+                <li key={loc.slug}>
+                  <Link href={`/locations/${loc.slug}`} className={linkClass}>
+                    Taxi in {loc.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="text-brand-400 text-xs uppercase tracking-wider mb-2">
               Popular Routes
-            </h3>
+            </p>
             <ul className="space-y-2">
-              {routeLinks.map((link) => (
+              {popularRoutes.map((route) => (
+                <li key={route.href}>
+                  <Link href={route.href} className={linkClass}>
+                    {route.label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/routes" className={linkClass}>
+                  View all routes
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Col 3: Company */}
+          <div>
+            <h3 className={headingClass}>Company</h3>
+            <ul className="space-y-2">
+              {companyLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-brand-300 hover:text-gold-400 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold-400 rounded-sm"
-                  >
+                  <Link href={link.href} className={linkClass}>
                     {link.label}
                   </Link>
                 </li>
@@ -127,30 +172,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Pages */}
+          {/* Col 4: Contact */}
           <div>
-            <h3 className="font-display font-semibold text-white text-sm uppercase tracking-widest mb-4">
-              Quick Links
-            </h3>
-            <ul className="space-y-2">
-              {pageLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-brand-300 hover:text-gold-400 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold-400 rounded-sm"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h3 className="font-display font-semibold text-white text-sm uppercase tracking-widest mb-4">
-              Contact
-            </h3>
+            <h3 className={headingClass}>Contact</h3>
             <ul className="space-y-3">
               <li>
                 <a
@@ -181,6 +205,24 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href="https://wa.me/966573067785"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 text-brand-300 hover:text-gold-400 text-sm transition-colors"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-3.5 h-3.5 mt-0.5 shrink-0"
+                    aria-hidden="true"
+                  >
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                  </svg>
+                  <span>WhatsApp Us</span>
+                </a>
+              </li>
+              <li>
+                <a
                   href="mailto:info@taxibhai.com"
                   className="flex items-start gap-2 text-brand-300 hover:text-gold-400 text-sm transition-colors"
                 >
@@ -195,6 +237,23 @@ export function Footer() {
               <li className="flex items-start gap-2 text-brand-300 text-sm">
                 <Clock size={14} className="mt-0.5 shrink-0" aria-hidden="true" />
                 <span>Available 24 hours, 7 days a week</span>
+              </li>
+              {/* Social icons repeated in contact column */}
+              <li>
+                <div className="flex items-center gap-3 pt-1">
+                  {socials.map((s) => (
+                    <a
+                      key={s.name}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Taxi Bhai on ${s.name}`}
+                      className="text-brand-400 hover:text-gold-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400 rounded-sm"
+                    >
+                      {s.icon}
+                    </a>
+                  ))}
+                </div>
               </li>
             </ul>
           </div>

@@ -147,4 +147,26 @@ export const services: ServicePillar[] = [
       "Suitable for VIP visits, corporate travel, and luxury family transfers",
     ],
   },
+  {
+    id: "local-city-rides",
+    slug: "local-city-rides",
+    name: "Local City Rides",
+    headline: "Local Taxi in Makkah, Madinah & Jeddah — City Rides & Hourly Hire",
+    shortAnswer:
+      "Taxi Bhai provides local city taxi transfers within Makkah, Madinah, and Jeddah. Need a ride from your hotel to the Haramain train station? A pickup from Jeddah Airport to a Jeddah hotel? Or a driver on standby for the day? All covered. Rates start from SAR 100.",
+    icon: "Car",
+    metaTitle: "Local Taxi in Makkah, Madinah & Jeddah | City Rides & Hourly Hire | Taxi Bhai",
+    metaDescription:
+      "Local city taxi in Makkah, Madinah & Jeddah. Hotel ↔ Haramain Train Station from SAR 100. JED Airport → Jeddah Hotel from SAR 200. Hourly hire from SAR 100/hr. Book on WhatsApp.",
+    startingFrom: "SAR 100",
+    relatedRouteIds: ["hotel-train-station", "train-station-hotel", "jed-airport-jed-hotel", "per-hour"],
+    keyFeatures: [
+      "Hotel ↔ Haramain High-Speed Railway station in Makkah or Madinah — from SAR 100",
+      "Jeddah Airport ↔ Jeddah Hotel — from SAR 200",
+      "Hourly hire from SAR 100/hr (Camry) with driver on standby",
+      "Hospital trips, shopping runs, custom city itineraries",
+      "Available in all three cities: Makkah, Madinah, and Jeddah",
+      "No fixed route required — go wherever you need",
+    ],
+  },
 ];

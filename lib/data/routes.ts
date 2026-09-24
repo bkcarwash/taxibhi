@@ -108,6 +108,22 @@ export const routes: Route[] = [
     ],
   },
   {
+    id: "med-airport-makkah",
+    from: "Madinah Airport (IATA: MED)",
+    to: "Makkah Hotel",
+    label: "Madinah Airport → Makkah Hotel",
+    slug: "madinah-airport-to-makkah",
+    approxDuration: "5–5.5 hrs",
+    distanceKm: "~435 km",
+    description:
+      "Private transfer from Prince Mohammad bin Abdulaziz International Airport in Madinah directly to your Makkah hotel — ideal for pilgrims on a Madinah-first itinerary who fly into MED and travel straight to Makkah after completing their Madinah visit.",
+    highlights: [
+      "Name-board meet & greet in arrivals hall",
+      "Rest stop included on this long route",
+      "Fixed fare — no hidden charges",
+    ],
+  },
+  {
     id: "jed-airport-madinah",
     from: "Jeddah Airport (IATA: JED)",
     to: "Madinah Hotel",

@@ -34,6 +34,10 @@ export const pricingTable: PriceRow[] = [
     prices: { camry: 100, staria: 150, gmc: 300, hiace: 300, coaster: 500, bus: 700 },
   },
   {
+    routeId: "med-airport-makkah",
+    prices: { camry: 500, staria: 600, gmc: 1000, hiace: 700, coaster: 1100, bus: 1400 },
+  },
+  {
     routeId: "jed-airport-madinah",
     prices: { camry: 500, staria: 600, gmc: 1000, hiace: 750, coaster: 1100, bus: 1400 },
   },
